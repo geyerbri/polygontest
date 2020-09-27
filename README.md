@@ -6,7 +6,7 @@ This is a tutorial repo, written by [Brian Geyer](https://github.com/geyerbri), 
 * [Add resources for the plugin](#add-resources-for-the-plugin)
 * [Add popups](#add-popups)
 * [Enable the Slider](#enable-the-slider)
-* [Control multiple markers simultaneously in the multiple groups](#control-multiple-markers-simultaneously-in-the-multiple-groups)
+* [Control multiple markers simultaneously in multiple groups](#control-multiple-markers-simultaneously-in-multiple-groups)
 
 <sub><a href="http://ecotrust-canada.github.io/markdown-toc/">*Table of contents generated with markdown-toc*</a></sub>
 
@@ -222,7 +222,7 @@ sliderControl1.startSlider();
 
 After adding these two functions, and your repo has updated online, you can go to your repo's webpage to see the slider in action. If you noticed before, the `time` values in each geoJSON entry are not in chronological order – the second and third entries are flipped, chronologically. This is to show that this plugin automatically reorders entries by default.
 
-## Control multiple markers simultaneously in the multiple groups
+## Control multiple markers simultaneously in multiple groups
 The way the Time-Slider plugin works, it creates a new layer for each marker in the geoJSON layer, then uses the slider to control the display of those individual layers. This means it is also possible to create a new `groupLayer` – which is its own specific thing for Leaflet – that contains each geoJSON collection of markers. Then, the plugin turns each collection into a controllable individual layer, rather than each marker separately.
 
 Doing this requires a few additional steps in the `<script>`, but this tutorial will go even further to show how to create a geoJSON layer by importing data from an external geoJSON file. Then it'll show how to take the two geoJSON layers and put them into a single `groupLayer`, which the plugin can then control.
