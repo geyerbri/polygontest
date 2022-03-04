@@ -98,14 +98,14 @@
             }).addTo(map1);
 
             // Write up the functions for using the geoJSON data to produce popups for each marker
-/*            var optionsObject = {
+            var optionsObject = {
                 onEachFeature: onEachFeature
             };
             function onEachFeature (feature, layer) {
                 var content = "<div style='clear: both'></div><div><h4>" + feature.properties.title + "</h4><p>" + feature.properties.time + "</p><p>" + feature.properties.description + "</p></div>";
                 layer.bindPopup(content, {closeButton: true});
             };
-*/
+
             // Create the first geoJSON layer
             var group1 = L.geoJSON(dataset1, optionsObject);
 
